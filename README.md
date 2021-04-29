@@ -10,6 +10,23 @@ yarn create next-app [project-name] -e https://github.com/dewball345/Next-Js-Fir
 npx create-next-app [project-name] -e https://github.com/dewball345/Next-Js-Firebase-Authentication-Template
 ```
 
+Then, add your firebase credentials in `/firebase/firebase.js`
+
+Replace the items in `firebaseConfig`:
+
+```
+var firebaseConfig = {
+    apiKey: "enter-api-key",
+    authDomain: "enter-auth-domain",
+    projectId: "enter-project-id",
+    storageBucket: "enter-storage-bucket",
+    messagingSenderId: "enter-messenger-id",
+    appId: "enter-app-id"
+};
+```
+
+With your own details.
+
 This starter gets you up and running if you want to make an SPA that requires Firebase Authentication. It also comes with Realtime DB support as well, though you can easily change it to Cloud Firestore by doing:
 
 ```
